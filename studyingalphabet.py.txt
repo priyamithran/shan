@@ -1,0 +1,11 @@
+a=list(raw_input())
+t=input()
+for i in range(t):
+    c1=list(raw_input())
+    for j in c1:
+        if j not in a:
+            print "No"
+            break
+    else:
+            print "Yes"
+    
