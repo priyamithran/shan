@@ -1,0 +1,15 @@
+a=int(raw_input(''))
+for i in range(0,a):
+    s=int(raw_input(''))
+    n=raw_input('').split()
+    c=0
+    cm=0
+    for j in range(0,s-1):
+        if n[j]=='cookie':
+            c=c+1
+            if n[j+1]=='milk':
+                cm+=1
+    if c==cm and n[s-1]=='milk':
+        print "YES"
+    else:
+        print "NO"
