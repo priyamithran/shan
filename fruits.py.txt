@@ -1,0 +1,10 @@
+a =int(raw_input())
+for i in range(a):
+    q = raw_input().split()
+    x,y,z = [int(s) for s in q]
+    d = abs(x-y)
+    dif= d-z
+    if dif<0:
+        print 0
+    else:
+        print dif 
